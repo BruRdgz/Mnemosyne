@@ -1,0 +1,37 @@
+{
+  "name": "sillytavern-mnemosyne",
+  "version": "0.2.0",
+  "private": true,
+  "type": "module",
+  "description": "Per-chat narrative memory and context virtualization for SillyTavern",
+  "scripts": {
+    "test": "node --test \"test/**/*.test.js\"",
+    "test:phase0": "node --test test/phase0/*.test.js",
+    "test:phase1": "node --test test/phase1/*.test.js",
+    "test:phase2": "node --test test/phase2/*.test.js",
+    "test:phase3": "node --test test/phase3/*.test.js",
+    "test:phase4": "node --test test/phase4/*.test.js",
+    "test:phase5": "node --test test/phase5/*.test.js",
+    "test:phase6": "node --test test/phase6/*.test.js",
+    "test:phase7": "node --test test/phase7/*.test.js",
+    "test:phase8": "node --test test/phase8/*.test.js",
+    "test:phase9": "node --test test/phase9/*.test.js",
+    "test:phase10": "node --test test/phase10/*.test.js",
+    "test:phase11": "node --test test/phase11/*.test.js",
+    "test:phase12": "node --test test/phase12/*.test.js",
+    "test:phase13": "node --test test/phase13/*.test.js",
+    "test:phase14": "node --test test/phase14/*.test.js",
+    "test:phase15": "node --test test/phase15/*.test.js",
+    "test:phase16": "node --test test/phase16/*.test.js",
+    "test:phase17": "node --test test/phase17/*.test.js",
+    "test:phase18": "node --test test/phase18/*.test.js",
+    "test:phase19": "node --test test/phase19/*.test.js",
+    "test:replay": "node --test test/phase16/rebuild-session.test.js",
+    "benchmark": "node benchmarks/run.js",
+    "qualify:st-api": "node scripts/qualify-st-public-apis.mjs",
+    "check": "node --check index.js && npm test"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

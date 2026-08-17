@@ -1,0 +1,6 @@
+node_modules/
+coverage/
+benchmark-results/
+*.log
+*.md
+!README.md

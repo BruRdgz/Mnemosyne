@@ -1,0 +1,17 @@
+{
+  "display_name": "Mnemosyne",
+  "loading_order": 2,
+  "requires": [],
+  "optional": ["connection-manager"],
+  "minimum_client_version": "1.18.0",
+  "js": "index.js",
+  "css": "style.css",
+  "author": "Bruno Rodrigues dos Santos",
+  "version": "0.2.0",
+  "homePage": "https://github.com/BruRdgz/Mnemosyne",
+  "generate_interceptor": "mnemosyne_intercept_messages",
+  "hooks": {
+    "enable": "enableMnemosyne",
+    "disable": "disableMnemosyne"
+  }
+}

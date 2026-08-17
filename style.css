@@ -1,0 +1,134 @@
+.mnemosyne-panel { margin: 0.5rem 0; color: var(--SmartThemeBodyColor, inherit); }
+.mnemosyne-section { margin: 0.65rem 0; padding: 0.75rem; border: 1px solid color-mix(in srgb, var(--SmartThemeBorderColor) 78%, transparent); border-radius: 0.55rem; background: color-mix(in srgb, var(--SmartThemeBodyColor) 94%, transparent); }
+.mnemosyne-section-heading { display: flex; align-items: flex-start; justify-content: space-between; gap: 0.75rem; margin-bottom: 0.65rem; }
+.mnemosyne-section-heading h3 { margin: 0; font-size: 1em; line-height: 1.25; }
+.mnemosyne-section-heading p { margin: 0.18rem 0 0; font-size: 0.78em; line-height: 1.35; opacity: 0.72; }
+.mnemosyne-section-kicker { flex: 0 0 auto; padding: 0.18rem 0.42rem; border: 1px solid var(--SmartThemeBorderColor); border-radius: 999px; font-size: 0.7em; line-height: 1.2; opacity: 0.7; white-space: nowrap; }
+.mnemosyne-toggle-list { display: grid; gap: 0.28rem; }
+.mnemosyne-toggle { display: grid !important; grid-template-columns: auto minmax(0, 1fr); align-items: start; column-gap: 0.45rem; row-gap: 0.05rem; margin: 0; padding: 0.25rem 0.35rem; border-radius: 0.3rem; }
+.mnemosyne-toggle:hover { background: color-mix(in srgb, var(--SmartThemeQuoteColor) 8%, transparent); }
+.mnemosyne-toggle input { grid-row: span 2; margin-top: 0.15rem; }
+.mnemosyne-toggle > span { font-size: 0.88em; line-height: 1.25; }
+.mnemosyne-toggle small { grid-column: 2; font-size: 0.74em; line-height: 1.25; opacity: 0.65; }
+.mnemosyne-setting-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.55rem 0.65rem; }
+.mnemosyne-setting { display: flex !important; flex-direction: column; align-items: stretch; gap: 0.22rem; min-width: 0; margin: 0 !important; }
+.mnemosyne-setting > span { display: flex; flex-direction: column; gap: 0.12rem; min-width: 0; font-size: 0.82em; line-height: 1.2; }
+.mnemosyne-setting > span small { font-size: 0.82em; line-height: 1.25; opacity: 0.62; }
+.mnemosyne-setting input, .mnemosyne-setting select { box-sizing: border-box; width: 100%; min-width: 0; margin: 0 !important; }
+.mnemosyne-setting--wide { grid-column: 1 / -1; }
+.mnemosyne-setting-grid--advanced { margin-top: 0.7rem; }
+.mnemosyne-button-primary { border-color: color-mix(in srgb, var(--SmartThemeQuoteColor) 70%, var(--SmartThemeBorderColor)); background: color-mix(in srgb, var(--SmartThemeQuoteColor) 12%, transparent); }
+.mnemosyne-button-secondary { border-color: color-mix(in srgb, var(--SmartThemeBorderColor) 85%, transparent); }
+.mnemosyne-action-groups { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0.55rem; }
+.mnemosyne-action-group { min-width: 0; padding: 0.5rem; border: 1px solid color-mix(in srgb, var(--SmartThemeBorderColor) 70%, transparent); border-radius: 0.4rem; background: color-mix(in srgb, var(--SmartThemeBodyColor) 90%, transparent); }
+.mnemosyne-action-group > span { display: block; margin-bottom: 0.35rem; font-size: 0.75em; font-weight: 600; text-transform: uppercase; letter-spacing: 0.04em; opacity: 0.68; }
+.mnemosyne-action-group .mnemosyne-actions { margin-top: 0; }
+.mnemosyne-action-group .mnemosyne-actions > button, .mnemosyne-action-group .mnemosyne-actions > .menu_button { flex: 1 1 auto; min-width: 0; }
+.mnemosyne-advanced-settings > summary { display: flex; align-items: center; justify-content: space-between; gap: 0.75rem; }
+.mnemosyne-advanced-settings > summary > span:first-child { display: flex; flex-direction: column; gap: 0.12rem; }
+.mnemosyne-advanced-settings > summary small { font-size: 0.78em; font-weight: 400; opacity: 0.65; }
+.mnemosyne-muted { opacity: 0.75; font-size: 0.9em; }
+.mnemosyne-error { color: var(--SmartThemeQuoteColor); }
+.mnemosyne-panel details { margin-top: 0.6rem; }
+.mnemosyne-panel summary { cursor: pointer; font-weight: 600; }
+.mnemosyne-panel button:disabled { cursor: default; opacity: 0.45; }
+.mnemosyne-toolbar { display: flex; flex-wrap: wrap; gap: 0.35rem; margin: 0.5rem 0; }
+.mnemosyne-actions { display: flex; flex-wrap: wrap; gap: 0.3rem; margin-top: 0.45rem; }
+.mnemosyne-inspector-shell { position: relative; }
+.mnemosyne-popout-header { display: none; align-items: center; justify-content: space-between; gap: 0.5rem; padding-bottom: 0.65rem; border-bottom: 1px solid var(--SmartThemeBorderColor); }
+.mnemosyne-panel.mnemosyne-popout-open::before { content: ''; position: fixed; inset: 0; z-index: 9998; background: rgba(0, 0, 0, 0.58); }
+.mnemosyne-panel.mnemosyne-popout-open .mnemosyne-inspector-shell { position: fixed; inset: 4vh 4vw; z-index: 9999; overflow: auto; padding: 1rem; border: 1px solid var(--SmartThemeBorderColor); border-radius: 0.6rem; background: var(--SmartThemeBlurTintColor, var(--SmartThemeBodyColor)); box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.45); }
+.mnemosyne-panel.mnemosyne-popout-open .mnemosyne-popout-header { display: flex; }
+.mnemosyne-card { margin: 0.55rem 0; padding: 0.65rem 0.75rem; border: 1px solid var(--SmartThemeBorderColor); border-left: 3px solid var(--SmartThemeQuoteColor); border-radius: 0.35rem; background: color-mix(in srgb, var(--SmartThemeBodyColor) 88%, transparent); }
+.mnemosyne-card-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); gap: 0.5rem; }
+.mnemosyne-card-grid .mnemosyne-card { margin: 0.25rem 0; }
+.mnemosyne-scoped-profile-card label { display: block; margin: 0.3rem 0; }
+.mnemosyne-scoped-profile-card input { box-sizing: border-box; width: 100%; margin-top: 0.18rem; }
+.mnemosyne-card-header { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 0.35rem; }
+.mnemosyne-card-meta { display: flex; flex-wrap: wrap; gap: 0.3rem 0.75rem; margin: 0.35rem 0; font-size: 0.82em; opacity: 0.82; }
+.mnemosyne-badges { display: flex; flex-wrap: wrap; gap: 0.25rem; }
+.mnemosyne-badge, .mnemosyne-chip { display: inline-flex; align-items: center; width: max-content; padding: 0.12rem 0.38rem; border: 1px solid var(--SmartThemeBorderColor); border-radius: 0.3rem; font-size: 0.74em; line-height: 1.25; opacity: 0.9; }
+.mnemosyne-badge.success { border-color: #58a66b; color: #8ee19e; }
+.mnemosyne-badge.warning { border-color: #c98d43; color: #f0bd77; }
+.mnemosyne-badge.accent { border-color: var(--SmartThemeQuoteColor); color: var(--SmartThemeQuoteColor); }
+.mnemosyne-field-label { display: block; margin-top: 0.4rem; font-size: 0.8em; opacity: 0.8; }
+.mnemosyne-card textarea { box-sizing: border-box; width: 100%; min-height: 4rem; margin-top: 0.25rem; resize: vertical; }
+.mnemosyne-sensitive-preview { margin: 0.55rem 0; padding: 0.55rem; border: 1px dashed var(--SmartThemeBorderColor); border-radius: 0.3rem; font-size: 0.9em; opacity: 0.8; }
+.mnemosyne-semantic-details { margin-top: 0.55rem !important; }
+.mnemosyne-family { margin: 0.35rem 0 !important; padding-left: 0.35rem; }
+.mnemosyne-record-list, .mnemosyne-reason-list, .mnemosyne-provenance, .mnemosyne-attempt-list { margin: 0.35rem 0; padding-left: 1.25rem; }
+.mnemosyne-record { margin: 0.35rem 0; padding: 0.35rem 0.45rem; border-left: 2px solid var(--SmartThemeBorderColor); list-style: none; }
+.mnemosyne-record-field { display: grid; grid-template-columns: minmax(6rem, 0.35fr) minmax(0, 1fr); gap: 0.4rem; margin: 0.16rem 0; overflow-wrap: anywhere; }
+.mnemosyne-record-key { opacity: 0.7; font-size: 0.82em; }
+.mnemosyne-record-provenance { display: block; margin-top: 0.2rem; font-size: 0.74em; opacity: 0.65; overflow-wrap: anywhere; }
+.mnemosyne-record-actions { display: flex; flex-wrap: wrap; gap: 0.3rem; margin-top: 0.35rem; }
+.mnemosyne-commitment-retire { border-color: #c98d43; color: #f0bd77; }
+.mnemosyne-chip-list { display: flex; flex-wrap: wrap; gap: 0.25rem; margin: 0.35rem 0; }
+.mnemosyne-empty { margin: 0.6rem 0; }
+.mnemosyne-status-line { margin: 0.4rem 0; }
+.mnemosyne-offline-status { border-left: 3px solid #58a66b; padding-left: 0.45rem; }
+.mnemosyne-alert { padding: 0.5rem; border: 1px solid #b45d5d; border-radius: 0.3rem; color: #f0aaaa; overflow-wrap: anywhere; }
+.mnemosyne-pagination { display: flex; align-items: center; justify-content: space-between; gap: 0.35rem; margin: 0.55rem 0; }
+.mnemosyne-pagination span { flex: 1; text-align: center; font-size: 0.85em; opacity: 0.8; }
+.mnemosyne-progress { height: 0.35rem; margin: 0.5rem 0; overflow: hidden; border-radius: 0.25rem; background: color-mix(in srgb, var(--SmartThemeBorderColor) 55%, transparent); }
+.mnemosyne-progress > span { display: block; height: 100%; background: var(--SmartThemeQuoteColor); transition: width 0.2s ease; }
+.mnemosyne-session-plan { display: grid; gap: 0.35rem; }
+.mnemosyne-plan-item { padding: 0.45rem; border: 1px solid var(--SmartThemeBorderColor); border-radius: 0.3rem; }
+.mnemosyne-plan-item p { margin: 0.35rem 0; overflow-wrap: anywhere; }
+.mnemosyne-token-total { display: flex; justify-content: space-between; gap: 0.5rem; margin: 0.45rem 0; }
+.mnemosyne-token-total span { opacity: 0.75; }
+.mnemosyne-token-row { margin: 0.35rem 0; }
+.mnemosyne-token-row > div:first-child { display: flex; justify-content: space-between; gap: 0.5rem; font-size: 0.82em; }
+.mnemosyne-token-bar { height: 0.3rem; margin-top: 0.16rem; overflow: hidden; border-radius: 0.25rem; background: color-mix(in srgb, var(--SmartThemeBorderColor) 55%, transparent); }
+.mnemosyne-token-bar > span { display: block; height: 100%; background: var(--SmartThemeQuoteColor); }
+.mnemosyne-prompt-details pre, .mnemosyne-card pre { max-height: 24rem; overflow: auto; white-space: pre-wrap; overflow-wrap: anywhere; font-size: 0.82em; }
+.mnemosyne-metric-summary { display: flex; flex-wrap: wrap; gap: 0.3rem; margin: 0.35rem 0; }
+.mnemosyne-panel pre { max-width: 100%; }
+.mnemosyne-message-health { display: inline-flex; align-items: center; margin-left: 0.3rem; padding: 0.08rem 0.3rem; border: 1px solid var(--SmartThemeBorderColor); border-radius: 0.25rem; font-size: 0.72em; line-height: 1.2; opacity: 0.78; cursor: default; }
+.mnemosyne-message-health-green { border-color: #58a66b; color: #8ee19e; }
+.mnemosyne-message-health-pending, .mnemosyne-message-health-stale, .mnemosyne-message-health-excluded { border-color: #c98d43; color: #f0bd77; }
+  .mes_text.mnemosyne-message-summarized {
+    /* Use a flat inherited color instead of opacity: opacity creates a
+       composited stacking context for every long summarized message and makes
+       scrolling a large chat noticeably more expensive. */
+    color: var(--mnemosyne-message-removed, #8a8a8a) !important;
+  }
+
+  .mes.mnemosyne-context-summarized .mes_text {
+    color: var(--mnemosyne-message-removed, #8a8a8a) !important;
+  }
+
+  /* SillyTavern assigns its own colors to Markdown descendants (notably
+     quotes, emphasis, links and code).  Inheritance from .mes_text therefore
+     does not reach those nodes.  Keep the override scoped to summarized
+     messages and use :where() so this does not add selector specificity to
+     ordinary chat rendering.  This is intentionally a color-only treatment:
+     unlike opacity, it does not create a composited layer for every old
+     message and keeps long-chat scrolling inexpensive. */
+  .mes_text.mnemosyne-message-summarized :where(
+    p, li, q, code, pre, em, i, u, strong, b, a, blockquote,
+    h1, h2, h3, h4, h5, h6, span, del, s, small, mark, sub, sup,
+    dt, dd, table, thead, tbody, tfoot, tr, th, td, font, tt, kbd, samp,
+    cite, abbr, time
+  ) {
+    color: var(--mnemosyne-message-removed, #8a8a8a) !important;
+  }
+
+  .mes.mnemosyne-context-summarized .mes_text :where(
+    p, li, q, code, pre, em, i, u, strong, b, a, blockquote,
+    h1, h2, h3, h4, h5, h6, span, del, s, small, mark, sub, sup,
+    dt, dd, table, thead, tbody, tfoot, tr, th, td, font, tt, kbd, samp,
+    cite, abbr, time
+  ) {
+    color: var(--mnemosyne-message-removed, #8a8a8a) !important;
+  }
+
+@media (max-width: 640px) {
+  .mnemosyne-section { padding: 0.6rem; }
+  .mnemosyne-section-heading { gap: 0.45rem; }
+  .mnemosyne-setting-grid, .mnemosyne-action-groups { grid-template-columns: 1fr; }
+  .mnemosyne-setting--wide { grid-column: auto; }
+  .mnemosyne-panel.mnemosyne-popout-open .mnemosyne-inspector-shell { inset: 1vh 1vw; padding: 0.65rem; }
+  .mnemosyne-record-field { grid-template-columns: 1fr; gap: 0.05rem; }
+  .mnemosyne-card-grid { grid-template-columns: 1fr; }
+}
